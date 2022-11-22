@@ -71,11 +71,30 @@ class Board
         puts "remaining pairs" + remaining_pairs.to_s
         card_placed = 0
     end
-end
+  end
+
+
+  #get a randomize value/char
+  #count the pairs we need
+  #get a random positoin for the value, assign a card instance to that position, do this one more time
+
+  def populate
+    alphabet = ("A".."Z").to_a
+    value = alphabet.sample
+    #value = alphabet.sample
+
+    
+    row, col = rand(0..@grid.length), rand(0..@grid.legnth)
+
+    (0...@grid.length).each do |i|
+      @grid[i][i]
+
+  end
+
 
   
 
-
+  
 
 
 end
